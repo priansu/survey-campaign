@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Survey Campaign Builder
 
 A simplified survey campaign builder built for the AppVersal frontend intern
@@ -124,3 +125,6 @@ Either way, the build command is `npm run build` and the output directory is `di
 - [ ] Submit: GitHub repo link, live demo URL, and this README
 
 **Deployment link:** _add after deploying_
+=======
+# survey-campaign
+>>>>>>> 934fb42a394c38b678e341a08b0bf4d5ce30a2e6
