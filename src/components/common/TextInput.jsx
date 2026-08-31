@@ -1,13 +1,32 @@
 import React from "react";
 
-export default function TextInput({ value, onChange, placeholder, className = "" }) {
+export default function TextInput({ value, onChange, placeholder, type = "text" }) {
   return (
     <input
-      type="text"
+      type={type}
       value={value}
       placeholder={placeholder}
       onChange={(e) => onChange(e.target.value)}
-      className={`w-full rounded-lg border border-line-strong bg-white px-3 py-2 text-[13.5px] text-ink outline-none transition focus:border-pine focus:ring-2 focus:ring-pine-soft ${className}`}
+      className="
+        h-11
+        w-full
+        rounded-[10px]
+        border
+        border-line-strong
+        bg-white
+        px-3.5
+        text-[13px]
+        font-medium
+        text-ink
+        outline-none
+        transition-all
+        duration-200
+        placeholder:text-muted
+        hover:border-ink/20
+        focus:border-pine
+        focus:ring-4
+        focus:ring-pine/10
+      "
     />
   );
 }
